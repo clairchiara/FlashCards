@@ -1,4 +1,6 @@
 import org.joda.time.DateTime;
+import org.joda.time.Days;
+
 import java.util.ArrayList;
 
 public class Deck {
@@ -27,10 +29,15 @@ public class Deck {
             Interface.error("No card found at index " + index);
         }
     }
-    public ArrayList<Card> cardsToStudy() {
-        ArrayList<Card> _cards = new ArrayList<Card>();
-        for (Card c : cards) {
-            if (c.lastUpdated.)
+    public void updateCard(int index, boolean remembered) {
+        if (remembered) {
+            if (cards.get(index).interval == 0) {
+                Card _Card = new Card(cards.get(index).front, cards.get(index).back);
+                _Card.interval = 1;
+                cards.set(index, _Card);
+            } else {
+                
+            }
         }
     }
 }
