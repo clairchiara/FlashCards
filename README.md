@@ -1,3 +1,3 @@
 # FlashCards
 
-A simple flash cards program (spaced repetition software) [incomplete]
+A simple flash cards program (spaced repetition software)
